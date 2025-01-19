@@ -1,9 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 * {
     margin: 0;
     padding: 0;
 }
 
+body {
+    width: 100vw;
+    height: 100vh;
+    /* border: solid red 2px;
+    border-style: border-box; */
+    display: flex;
+    flex : row wrap;
+}
+
+aside {
+    width: 280px;
+    height: 96.7%;
+    padding:12px;
+    position: fixed;
+    border: solid rgb(143, 143, 143) 1.5px;
+    border-style: border-box;
+}
+
+.nav-links {
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.more-links {
+    justify-self: flex-end;
+}
+
+.logo, .nav-links {
+    padding : 12px;
+}
+
+
+aside li {
+    margin: 6px 0px;
+    list-style: none;
+    padding: 10px;
+}
+
+aside li:hover {
+    cursor: pointer;
+    background-color: #f5f5f5;
+    border-radius: 8px;
+}
+
+aside li:active {
+    opacity: 0.6;
+
+}
+
+aside li a {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
 .menu-icons {
     height: 24px;
     width:24px;
+}
+aside li a p {
+    color: #262626;
+font-family: "Roboto" , sans-serif;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+padding-left: 12px;
+}
+
+.Profile-icon {
+    border: solid 0.7px #262626;
+    border-radius: 100%;
+}
+
+main {
+    margin-left: 306px;
+    width: 80%;
+    height: 199%;
+    padding: 12px;
+    /* border: solid blue 2px;
+    border-style: border-box; */
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.container {
+    width: 69%;
+    border: solid 2px black;
+}
+
+.side-bar {
+    width: 29%;
+    border: solid 2px red;
 }
